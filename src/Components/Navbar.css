@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav .right a {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px 10px;
+    margin: 0px 10px;
+}
+
+.left h1 {
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 0 0 10px #00d4ff, 0 0 8px #00d4ff, 0 0 30px #00d4ff,
+    0 0 40px #00d4ff, 0 0 70px #00d4ff, 0 0 7px #00d4ff, 0 0 4px #00d4ff,
+    0 0 6px #00d4ff;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+/* Hamburger menu styles */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0;
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    nav .right {
+        display: none;
+    }
+
+    nav .right.show {
+        display: flex;
+        flex-direction: column;
+        background-color: hsl(220, 13%, 18%);
+        position: absolute;
+        top: 60px;
+        right: 15px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    nav .right .show a {
+        margin: 5px 0;
+    }
+}
