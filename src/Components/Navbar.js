@@ -16,7 +16,7 @@ const Navbar = () => {
         <>
             <nav>
                 <div className="left">
-                    <h1>SV</h1>
+                    <h1>ASP</h1>
                 </div>
                 <div className={`right ${showMenu ? 'show' : ''}`}>
                 <Link to='' ></Link>

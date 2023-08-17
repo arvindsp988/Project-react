@@ -76,7 +76,7 @@ const GithubProfiles = () => {
           <div className='about'>
             <div><span>Repositories</span><span>{repositories}</span></div>
             <div><span>Followers</span><span>{followers}</span></div>
-            <div><span>Followng</span><span>{followings}</span></div>
+            <div><span>Following</span><span>{followings}</span></div>
           </div>
           <div className='buttons'>
             <button onClick={() => { window.open(profileUrl, '_blank'); }}>View Profile</button>
